@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="icon" href="img/l-tech logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Legacy Tech</title>
+    <style>
+    a{
+        color:white;
+    }
+    @font-face {
+    font-family: bodyfont; 
+    src: url('Azonix-1VB0.otf'); 
+        }
+        body{
+            background: #25384C;
+            font-family: bodyfont;
+        }
+        .butn:hover{
+            /* padding-left:5px; */
+           
+            animation:example;
+            transition: 0.5s;
+        }
+        @keyframes example {
+  0%   {background-color:red;}
+  100%  {background-color:yellow; }
+ 
+}
+        .ityped-cursor {
+      font-size: 2.2rem;
+      opacity: 1;
+      -webkit-animation: blink 0.3s infinite;
+      -moz-animation: blink 0.3s infinite;
+      animation: blink 0.3s infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes blink {
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @-webkit-keyframes blink {
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @-moz-keyframes blink {
+      100% {
+        opacity: 0;
+      }
+    }
+    /* .bg{
+        background-image: url('img/left-bg.jpg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: none;
+        filter: blur(2px);
+    }*/
+        .leg{ 
+            background: #25384C;
+        }
+        .leg-text{
+            color: #25384C;
+        }
+        /* .bg{
+            background: url('img/bg-pop.jpg');
+        } */
+        .name{
+            margin-top:10%;
+        }
+        li{
+            color:white;
+            font-size:20px;
+        }
+        ul{
+            line-height: 70px;
+        }
+        #normal{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+     <img src="img/left-bg.jpg" alt="" width="70%" style="position: fixed;filter: blur(10px);z-index: -2;">
+    <div class="row" style="z-index: 77;">
+
+        <div class="col l6 m6 s12 push-l1 bg">
+        <div class="contaier" style="height:100%">
+            <div class="logo">
+                <br> 
+                <img src="img/l-tech logo.png" width="10%" style="display: inline;filter: blur(2);" alt=""> 
+                <!-- <span style="font-weight: bold;">
+                    LEGACY TECH    
+                    </span> -->
+            </div>
+            <br><br><br><br>
+            <div class="text" id="idk">
+                <div id="app" style="font-family:bodyfont;color: white;z-index: 77;height: 20px;">
+                    <h1 id="ityped">    </h1>
+                </div>
+                <h1 class="white-text" id="normal" style="margin-bottom: -30px;">
+                    Hi There,
+                    <br>
+                    I'm Victor Legacy
+                </h1>
+            </div>
+           
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <div class="buttons">
+                <a href="assets/cv.pdf" class="btn-large butn leg">
+                    Download CV
+                </a>
+                <a href="assets/cv.pdf" class="btn-large butn leg-text white">
+                   Hire Me
+                </a>
+            </div>
+        </div>
+            <!-- <img src="img/left-bg.jpg" style="position: absolute;" alt=""> -->
+        <!-- <div class="container">
+            <div class="logo">
+                <img src="img/l-tech logo.png" width="20%" style="display: inline;filter: blur(2);" alt=""> 
+                <span style="font-weight: bold;">
+                    LEGACY TECH    
+                    </span>
+            </div>
+            <div class="name white-text" >
+                WEB DEVELOPER | GRAPHIC DESIGNER
+            <span style="width: 10px;">
+                <hr >
+            </span>
+            
+        </div>
+        </div>
+            <br><br><br>
+            <div class="buttons">
+                <a href="assets/cv.pdf" class="btn-large butn leg">
+                    Download CV
+                </a>
+                <a href="assets/cv.pdf" class="btn-large butn white">
+                    More About me
+                </a>
+            </div>
+            </div> -->
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="col l6 m6 s12 pull-l1 right-align" style="height: 100%;"> 
+            <div style="margin-top: 35%;margin-bottom: 55%;">
+              <ul>
+                <li> <a href="#!"> <span  style="font-size: 15px;" class="ikon material-symbols-outlined">
+                    home
+                    </span> HOME</a> </li>
+                <li> <a href="#about"><a href="#!"> <span style="font-size: 15px;" class="ikon  2qqqqqqq material-symbols-outlined">
+                    person
+                    </span>  ABOUT </a> </li>
+                <li> <a href="#cert"> <span class="material-symbols-outlined">
+                    card_membership
+                    </span> CERTIFICATES </a> </li>
+                <li> <a href="#jobs"><span class="material-symbols-outlined">
+                    work
+                    </span> MY JOBS </a> </li> 
+                <li>   <a href="#contact"> <span class="material-symbols-outlined">
+                    perm_contact_calendar
+                    </span> CONTACT </a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+
+<script src="https://unpkg.com/ityped@1.0.2"></script>
+  <script>
+    ityped.init(document.querySelector("#ityped"), {
+      showCursor: false,
+      loop: false,
+      strings: ['HI THERE, ', 'I\'M VICTOR LEGACY           '],
+    })
+
+    ityped.init("#placeholder", {
+      placeholder: false,
+      showCursor: falses
+    })
+  </script>
+    <script src="js/materialize.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+</html>
