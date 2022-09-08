@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="icon" href="img/l-tech logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Legacy Tech</title>
     <style>
+    .load{
+        animation: ease;
+    }
     a{
         color:white;
+    }
+    .ikon{
+        font-size:15px;
     }
     @font-face {
     font-family: bodyfont; 
@@ -89,7 +97,18 @@
     </style>
 </head>
 <body>
-    
+    <div id="load" style="width: 100%;height:100%;background:linear-gradient(to left, #25384C,#16212c,#25384C);z-index: 99;position: fixed;">
+    <div style="position: absolute;width:5%;height:20%;margin-left:45%;margin-top: 20%;">
+    <div class="loader">
+        <div class="face">
+            <div class="circle"></div>
+        </div>
+        <div class="face">
+            <div class="circle"></div>
+        </div>
+    </div>
+</div>
+</div>
      <img src="img/left-bg.jpg" alt="" width="70%" style="position: fixed;filter: blur(10px);z-index: -2;">
     <div class="row" style="z-index: 77;">
 
@@ -104,14 +123,17 @@
             </div>
             <br><br><br><br>
             <div class="text" id="idk">
-                <div id="app" style="font-family:bodyfont;color: white;z-index: 77;height: 20px;">
+                <div style="font-family:bodyfont;color: white;z-index: 77;height: 20px;">
+                    <h1 class="white-tfext" id="normal"  style="margin-bottom: -30px;">
+                        Hi There,
+                        <br>
+                        I'm Victor Legacy
+                    </h1>
+                </div>
+                <div id="app">
                     <h1 id="ityped">    </h1>
                 </div>
-                <h1 class="white-text" id="normal" style="margin-bottom: -30px;">
-                    Hi There,
-                    <br>
-                    I'm Victor Legacy
-                </h1>
+                
             </div>
            
             <br><br><br><br><br><br><br><br><br><br><br>
@@ -131,6 +153,7 @@
                 <span style="font-weight: bold;">
                     LEGACY TECH    
                     </span>
+                    
             </div>
             <div class="name white-text" >
                 WEB DEVELOPER | GRAPHIC DESIGNER
@@ -156,32 +179,37 @@
         <div class="col l6 m6 s12 pull-l1 right-align" style="height: 100%;"> 
             <div style="margin-top: 35%;margin-bottom: 55%;">
               <ul>
-                <li> <a href="#!"> <span  style="font-size: 15px;" class="ikon material-symbols-outlined">
+                <li> <a href="#!"> <span class="ikon material-symbols-outlined">
                     home
                     </span> HOME</a> </li>
-                <li> <a href="#about"><a href="#!"> <span style="font-size: 15px;" class="ikon  2qqqqqqq material-symbols-outlined">
+                <li> <a href="#about"><a href="#!"> <span class="ikon material-symbols-outlined">
                     person
                     </span>  ABOUT </a> </li>
-                <li> <a href="#cert"> <span class="material-symbols-outlined">
+                <li> <a href="#cert"> <span class="ikon material-symbols-outlined">
                     card_membership
                     </span> CERTIFICATES </a> </li>
-                <li> <a href="#jobs"><span class="material-symbols-outlined">
+                <li> <a href="#jobs"><span class="ikon material-symbols-outlined">
                     work
                     </span> MY JOBS </a> </li> 
-                <li>   <a href="#contact"> <span class="material-symbols-outlined">
+                <li>   <a href="#contact"> <span class="ikon material-symbols-outlined">
                     perm_contact_calendar
                     </span> CONTACT </a></li>
               </ul>
             </div>
         </div>
     </div>
-
+<script>
+    function hide(){
+        document.getElementById('load').style.display='none';
+    }
+    setTimeout(hide,4000)
+</script>
 <script src="https://unpkg.com/ityped@1.0.2"></script>
   <script>
     ityped.init(document.querySelector("#ityped"), {
       showCursor: false,
-      loop: false,
-      strings: ['HI THERE, ', 'I\'M VICTOR LEGACY           '],
+      loop: true,
+      strings: ['WEB DEVELOPER, ', 'GRAPHIC DESIGNER'],
     })
 
     ityped.init("#placeholder", {
