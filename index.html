@@ -102,6 +102,7 @@
     </style>
 </head>
 <body>
+    <div class="hide-on-med-and-down">
     <div id="load" style="width: 100%;height:100%;background:linear-gradient(to left, #25384C,#16212c,#25384C);z-index: 99;position: fixed;">
     <div style="position: absolute;width:5%;height:20%;margin-left:45%;margin-top: 20%;">
         <div class="loader">
@@ -131,7 +132,7 @@
             <div class="">
                 <h4 class="white-text" style="margin-bottom: -30px;">
                     <!-- Hi There  -->
-                    Hi 🖐, I'm 
+                    Hi there 🖐, I'm 
                 </h4>
                     <br>
                     <h1 class="white-text">
@@ -149,15 +150,14 @@
            
             <br><br><br><br><br><br>
             <div class="buttons" style="display: inline-block;">
-                <a href="assets/cv.pdf" class="btn-large butn button down leg" style="">
+                <a href="assets/cv.pdf" class=" btn-large butn button down leg" style="">
+                    <span class="ikon material-symbols-outlined">
+cloud_download
+</span>
                     Download CV
                 </a>
-                <a href="assets/cv.pdf" class="btn-large button butn hire leg-text white ">
-                    <span class="ikon material-symbols-outlined">
-                        
-                            handshake
-                       
-                        </span>
+                <a href="assets/cv.pdf" class="btn-large button butn hire leg-text white " style="margin-left:5px">
+                    <span class="ikon material-symbols-outlined">handshake</span>                    
                    Hire Me
                 </a>
             </div>
@@ -185,6 +185,12 @@
             </div>
         </div>
     </div>
+     </div>
+    <div class="hide-on-large-and-up">
+        <h4 class="center">
+            HIde oo
+        </h4>
+    </div>
 <script>
     function hide(){
         document.getElementById('load').style.display='none';
@@ -206,5 +212,6 @@
   </script>
     <script src="js/materialize.js"></script>
     <script src="js/jquery.js"></script>
+
 </body>
 </html>
