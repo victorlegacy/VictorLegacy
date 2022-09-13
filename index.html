@@ -23,6 +23,7 @@
             width: 70%;
             background: #0f3157;
             color:white;
+            border-radius: 10px;
         }
     .linx:hover{
         margin-left:2px;
@@ -189,7 +190,7 @@
             <div style="margin-top: 30%;">
               <ul>
                 <li class="linx"> 
-                    <a href="#about" onclick="document.getElementById('about').style.display='block'" class="w3-button"> 
+                    <a href="#about" onclick="document.getElementById('about').style.display='block'"> 
                         <span class="ikons material-symbols-outlined"> person</span>
                         ABOUT 
                     </a> 
@@ -207,7 +208,7 @@
                     </a> 
                 </li> 
                 <li class="linx">   
-                    <a href="#contact"> 
+                    <a href="#contact" onclick="document.getElementById('contact').style.display='block'"> 
                         <span class="ikons material-symbols-outlined">perm_contact_calendar</span>
                         CONTACT
                     </a>
@@ -249,9 +250,11 @@
   <!-- Certificate Modal-->
   <div id="cert" class="w3-modal">
     <div class="w3-modal-content w3-animate-zoom w3-card-4"> 
+        <br>
         <h5 class="white-text w3-container" style="font-family: bodyfont">
-                    CERTIFICATES
-                </h5>
+            CERTIFICATES
+        </h5>
+        <hr>
         <div class="w3-container">
 
             <span onclick="document.getElementById('cert').style.display='none'"
@@ -270,8 +273,9 @@
     <div class="w3-modal-content w3-animate-zoom w3-card-4"> 
         <br>
         <h5 class="white-text w3-container" style="font-family: bodyfont">
-                    MY JOBS/PROJECTS
+                    MY JOBS & PROJECTS
                 </h5>
+                <hr>
         <div class="w3-container">
 
             <span onclick="document.getElementById('jobs').style.display='none'"
@@ -348,7 +352,56 @@
         </div>
       </div>
   </div>  
+  <!-- MOdal for Contact -->
+   <div id="contact" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4"> 
+        <br>
+        <h5 class="white-text w3-container" style="font-family: bodyfont">
+                    CONTACT & LINKS 
 
+
+                </h5>
+                <hr>
+        <div class="w3-container">
+            <span onclick="document.getElementById('contact').style.display='none'"
+             class="w3-button w3-display-topright">&times;</span>
+            <div class="row">
+                <div class="col l3 center">
+                      <a href="https://github.com/victorlegacy/"><i class="fab fa-4x center fa-github"></i></a>
+                      <br><br>
+                      <div style="border-radius: 5px" class="white center leg-text">
+                        @victorlegacy
+                      </div>
+                </div>
+                <div class="col l3 center">
+                    <a href="https://www.linkedin.com/in/victor-okoroafor-333370213/"><i class="fab fa-4x center fa-linkedin"></i></a>
+                    <br><br>
+                      <div style="border-radius: 5px" class="white center leg-text">
+                        @Victor OKoroafor
+                      </div>
+                </div>
+                <div class="col l3 center">
+                    <a href="https://twitter.com/0koroaforVictor"><i class="fab fa-4x center fa-twitter"></i></a>
+                    <br><br>
+                      <div style="border-radius: 5px" class="white center leg-text">
+                        @Victor<sup>o</sup>legacy
+                      </div>
+                </div>
+                <div   class="col l3 center">
+                    <a href="https://www.instagram.com/legacytech_/"><i class="fab fa-4x center fa-instagram"></i></a>
+                    <br><br>
+                      <div style="border-radius: 5px" class="white center leg-text">
+                        @legacytech_
+                      </div>
+                </div>
+            </div>
+            <hr>
+            <span style="margin-right: 20px"><i class="fas fa-phone"></i> +234 904 901 1250 , +234 813 330 5170</span> |
+            <span style="margin-left: 20px"><i class="fas fa-envelope"></i> tech.legacy.dev@gmail.com </span>
+        </div>
+        <br>
+      </div>
+  </div> 
 
 <!-- Script for hiding pre-loader -->
 <script>
@@ -383,5 +436,6 @@
           });
         });
     </script>
+    <script src="https://kit.fontawesome.com/1f573f0a48.js" crossorigin="anonymous"></script>  
 </body>
 </html>
