@@ -1,492 +1,610 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Legacy Tech</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-    <!-- Favicon -->
-    <link href="img/l-tech.png" rel="icon">
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+      <!-- *********************************************************
+*    Project Name        LEGACY TECH                     *
+*    Project URL         https://legacytech.vercel.app/       *
+*    Project Author      Legacy Tech                          *
+**************************************************************
+                                                             *
+**************************************************************
+*   The Home Page                                            *
+************************************************************** -->
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZPR03LYT99"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+ 
+     gtag('config', 'G-ZPR03LYT99');
+   </script>
+<meta data-react-helmet="true" property="og:title" content="Legacy Tech">
+<meta data-react-helmet="true" property="og:url" content="https://legacytech.vercel.app/">
+<meta data-react-helmet="true" property="og:type" content="website">
+<meta data-react-helmet="true" name="keywords" content="web developer in kubwa, web designer in kubwa, graphic designer in kubwa />
+<meta data-react-helmet="true" name="keywords" content="kubwa website developer , kubwa graphic designer" />
+<meta data-react-helmet="true" property="og:site_name" content="Legacy Tech">
+<meta name="author" content="Legacy Tech" />
+<meta name="author" content="https://legacytech.vercel.app/" />
+<meta name="description" content="Create a website, design flyers, Run SEO, Create an app and lots more " />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- <link rel="stylesheet" href="css/preloader.css"> -->
+    <link rel="stylesheet" href="css/pre.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="icon" href="img/l-tech logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Victor Legacy</title>
+    <style>
+        .w3-button:hover{
+            background: transparent !important;
+            }
+        .w3-modal-content{
+            width: 70%;
+            background: #0f3157;
+            color:white;
+            border-radius: 10px;
+        }
+    .linx:hover{
+        margin-left:2px;
+        transition: ease-in-out 0.5s;
+        /* transition: ease-out 0.5s; */
+        font-size:24px;
+    }
+        .down:hover{
+            background-color: transparent !important;
+            border: 3px solid white;
+            color: white !important;
+        }
+    
+    .load{
+        animation: ease;
+    }
+    a{
+        color:white;
+    }
+    .ikon{
+        font-size:15px;
+    }
+    .ikons{
+        font-size:20px;
+    }
+    @font-face {
+    font-family: bodyfont; 
+    src: url('Azonix-1VB0.otf'); 
+        }
+        body{
+            background: #0f3157;
+            font-family: bodyfont;
+        }
+        .butn:hover{
+            /* padding-left:5px; */
+           
+            animation:example;
+            transition: 0.5s;
+        }
+        @keyframes example {
+  0%   {background-color:red;}
+  100%  {background-color:yellow; }
+ 
+}
+.ityped-cursor {
+      font-size: 2.2rem;
+      opacity: 1;
+      -webkit-animation: blink 0.3s infinite;
+      -moz-animation: blink 0.3s infinite;
+      animation: blink 0.3s infinite;
+      animation-direction: alternate;
+    }
 
-    <!-- Icon Font Stylesheet -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    @keyframes blink {
+      100% {
+        opacity: 0;
+      }
+    }
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    @-webkit-keyframes blink {
+      100% {
+        opacity: 0;
+      }
+    }
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    @-moz-keyframes blink {
+      100% {
+        opacity: 0;
+      }
+    }
+    /* .bg{
+        background-image: url('img/left-bg.jpg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: none;
+        filter: legr(2px);
+    }*/
+        .leg{ 
+            background: #0f3157;
+        }
+        .leg-text{
+            color: #0f3157;
+        }
+        /* .bg{
+            background: url('img/bg-pop.jpg');
+        } */
+        .name{
+            margin-top:10%;
+        }
+        li{
+            color:white;
+            font-size:25px;
+        }
+        ul{
+            line-height: 80px;
+        }
+        #normal{
+            display: none;
+        }
+        .hire:hover{
+            background-color: transparent !important;
+            border: 3px solid white;
+            color: white !important;
+        }
+        .hire:hover{
+            background-color: transparent !important;
+            border: 3px solid white;
+            color: white !important;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only"></span>
-            </div>
-        </div>
-        <!-- Spinner End -->
-
-
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"> <img src="img/l-tech.png" width="18%" alt=""> <span class="fs-5">Legacy Tech</span></h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="#!" class="nav-item nav-link active" id="home_">Home</a>
-                        <a href="#about" class="nav-item nav-link" id="about_">About</a>
-                        <a href="#service" class="nav-item nav-link" id="service_">Service</a>
-                        <a href="#project" class="nav-item nav-link" id="project_">Project</a>
-                        <!-- <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                               
-                                -0o6
-                            </div>
-                        </div> -->
-                        <a href="#contact" class="nav-item nav-link" id="contact_">Contact</a>
-                    </div>
-                    <!-- <script>
-                        function change_about(){
-                            document.getElementById('about_').setAttribute("class","nav-item nav-link active");
-                            var elemen = document.getElementById('about');
-                            elemen.scrollIntoView();
-                        }
-                    </script> -->
-                    <!-- <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
-                    <a href="start/" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Get Started</a>
-                </div>
-            </nav>
-
-            <div class="container-xxl py-5 bg-primary hero-header mb-5">
-                <div class="container my-5 py-5 px-lg-5">
-                    <div class="row g-5 py-5">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <br>
-                            <br>
-                            <br>
-                            <h1 class="text-white mb-4 animated zoomIn">Boost your business online</h1>
-                            <p class="text-white pb-3 animated zoomIn">
-                               Technology is a powerful tool that can transform businesses and we're excited to partner with you on this journey.
-                               <br>Legacytech offers Websites Development, Social Media Managment, Cloud Technology and lots more,
-                               thereby boosting your Business credibility & Generationg sales.
-
-                            </p>
-                            <a href="qoute/" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Get a Quote</a>
-                            <a href="#contact" id="contact_" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
-                        </div>
-                        <div class="col-lg-6 text-center text-lg-start">
-                            
-                            <img class="img-fluid" src="img/hero.svg" alt="">
-                        </div>
-                    </div>
+    <div class="hide-on-med-and-down">
+        <div id="load" style="width: 100%;height:100%;background:linear-gradient(to left, #0f3157,#16212c,#0f3157);z-index: 99;position: fixed;">
+            <div style="position: absolute;width:5%;height:20%;margin-left:45%;margin-top: 20%;">
+            <div class="loader">
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
                 </div>
             </div>
         </div>
-        <!-- Navbar & Hero End -->
-
-
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+    <img src="img/commandee.jpg" alt="" width="70%" style="position: fixed;filter:blur(10px);z-index: -2;">
+    <div class="row" style="z-index: 77;">
+        <div class="col l6 m6 s12 push-l1 bg">
+            <div class="contaier" style="height:100%">
+                <div class="logo">
+                    <br> 
+                    <img src="img/l-tech logo.png" width="10%" style="display: inline;filter: legr(2);" alt=""> 
+                </div>
+                <br><br><br><br><br><br>
+                <div class="">
+                    <h4 class="white-text" style="margin-bottom: -30px;">
+                        Hi there 🖐, I'm 
+                    </h4>
+                    <br>
+                    <h1 class="white-text" style="font-family: bodyfont">           
+                    Victor <span style="color:#0f3157"> Legacy</span>
+                    </h1>
+                    <div style="font-family:bodyfont;color: white;z-index: 77;height: 20px;">
+                        <div id="app" >
+                            <h4 id="ityped" style="font-family: 'Segoe UI'"></h4>
                         </div>
                     </div>
                 </div>
+                <br><br><br><br><br><br>
+                <div class="buttons" style="display: inline-block;">
+                    <a href="Victor_Okoroafor_CV.pdf" download class=" btn-large butn button down leg">
+                        <span class="ikon material-symbols-outlined">cloud_download</span>
+                        Download CV
+                    </a>
+                    <a href="https://wa.me/+2349049011250" target="_blank" class="btn-large button butn hire leg-text white " style="margin-left:5px">
+                        <span class="ikon material-symbols-outlined">handshake</span> 
+                       Hire Me
+                    </a>
+                </div>
+            </div>                    
+        </div>
+        <div class="col l6 m6 s12 pull-l1 right-align" style="height: 100%;"> 
+            <div style="margin-top: 30%;">
+              <ul>
+                <li class="linx"> 
+                    <a href="#about" onclick="document.getElementById('about').style.display='block'"> 
+                        <span class="ikons material-symbols-outlined"> person</span>
+                        ABOUT 
+                    </a> 
+                </li>
+                <li class="linx"> 
+                    <a href="#cert" onclick="document.getElementById('cert').style.display='block'">
+                        <span class="ikons material-symbols-outlined">card_membership</span>    
+                        CERTS 
+                    </a> 
+                </li>
+                <li class="linx"> 
+                    <a href="#jobs" onclick="document.getElementById('jobs').style.display='block'">
+                        <span class="ikons material-symbols-outlined">work</span>
+                        PROJECTS
+                    </a> 
+                </li> 
+                <li class="linx">   
+                    <a href="#contact" onclick="document.getElementById('contact').style.display='block'"> 
+                        <span class="ikons material-symbols-outlined">perm_contact_calendar</span>
+                        CONTACT
+                    </a>
+                </li>
+              </ul>
             </div>
         </div>
-        <!-- Full Screen Search End -->
-
-
-        <!-- About Start -->
-        <div class="container-xxl py-5" id="about">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">About Us</h6>
-                            <h2 class="mt-2">#1 digital solutions provider</h2>
-                        </div>
-                        <p class="mb-4">Our team of experts is committed to delivering high-quality services that meet your business needs. Whether you're looking to enhance your online presence, create stunning graphics, or develop a user-friendly website, we've got you covered. Our experienced professionals are equipped with the latest technology and tools to help you achieve your goals.</p>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>New technologies</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Delivery</h6>
-                            </div>
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                       
-                            <a class="btn btn-primary rounded-pill px-4 me-3" href="https://wa.me/+2349049011250" target="_blank"><i class="fab fa-whatsapp"></i> Message Us</a>
-                            <a class="btn btn-outline-primary btn-square me-3" target="_blank" href="https://web.facebook.com/profile.php?id=100068509356587"><i class="fab fa-facebook-f"></i></a>
-                            <!-- <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a> -->
-                            <a class="btn btn-outline-primary btn-square me-3" target="_blank" href="https://www.instagram.com/legacytech_/"><i class="fab fa-instagram"></i></a>
-                            <!-- <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <br><br>
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.svg">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Newsletter Start -->
-        <div class="container-xxl bg-primary newsletter my-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container px-lg-5">
-                <div class="row align-items-center" style="height: 250px;">
-                    <div class="col-12 col-md-6">
-                        <h3 class="text-white">Interested in learning?</h3>
-                        <small class="text-white">Join our online lessons on Web Development, Graphic Design, SEO, Digital Marketing & others</small>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email or phone" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-                        <img class="img-fluid mt-5" style="height: 250px;" src="img/undraw_video_call_re_4p26.svg">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Newsletter End -->
-
-
-        <!-- Service Start -->
-        <div class="container-xxl py-5" id="service">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Services</h6>
-                    <h2 class="mt-2">What Solutions We Provide</h2>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-code fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Web Development</h5>
-                            <p>Grow your business credibility and sales with stunning, modern, and mobile-friendly websites/webapps. </p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Get service</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fas fa-hashtag fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Social Media Management</h5>
-                            <p>Give your social media pages a professional look with our pro-tools.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Get service</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fas fa-pen fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Graphic Design</h5>
-                            <p>Get creative logos, flyers, banners, posters and more for both print and social media posts. </p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Get service</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa-solid fa-bullhorn fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Digital Marketing</h5>
-                            <p>Reach potential customers, both local and international, with our advanced digital marketing tools</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Get service</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-mobile fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">App Development</h5>
-                            <p>Get desktop and mobile applications with full functionality and modern design.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Get service</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa-solid fa-chalkboard-user fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Training</h5>
-                            <p>Learn, refresh & get proffessional on any of the above services and more.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Get service</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
-
-
-        <!-- Portfolio Start -->
-        <div class="container-xxl py-5" id="project">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Projects</h6>
-                    <h2 class="mt-2">Recently Launched Projects</h2>
-                </div>
-                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="col-12 text-center">
-                        <ul class="list-inline mb-5" id="portfolio-flters">
-                            <li class="btn px-3 pe-4 active" data-filter="*">All</li>
-                            <li class="btn px-3 pe-4" data-filter=".first">Websites</li>
-                            <li class="btn px-3 pe-4" data-filter=".second">Webapps</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row g-4 portfolio-container">
-                  
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/3.png" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Educational Website</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" target="_blank" href="https://educationplanng.com">Educateplan</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.3s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/5.png" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>SMM panel</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" target="_blank" href="https://www.growpagepro.com">Growpagepro</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/6.png" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Kiddies Website</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" target="_blank" href="https://www.supremekidcontest.com">Supreme Kids</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio End -->
-        <!-- Testimonial Start -->
-        <div class="container-xxl bg-primary testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Working with this web development firm was an absolute pleasure. They were professional, responsive, and incredibly talented. They took my website to the next level and I couldn't be happier with the end result. I would definitely work with them again and recommend them to anyone looking for web development services.</p>
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-user"></i>
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Peter Dremine</h6>
-                                <small>Architect</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>I was blown away by the professionalism and skill of this web development firm. They took my vision and turned it into a beautiful and functional website that exceeded my expectations. I highly recommend them to anyone looking for top-notch web development services.</p>
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-user"></i>
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Jenifer Uwe</h6>
-                                <small>Caterer</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>I had a great experience working with this web development firm. They were incredibly responsive and easy to work with throughout the entire process. The end result was a website that looked amazing and functioned perfectly. I would definitely work with them again in the future.</p>
-                        <div class="d-flex align-items-center">
-                            <!-- <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;"> -->
-                            <i class="fas fa-user"></i>
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Justin Ndukwe</h6>
-                                <small>Data Analyst</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>I am so impressed with the quality of work from this web development firm. They listened to all of my needs and delivered a website that was exactly what I was looking for. They were patient and communicative throughout the entire process, and I would highly recommend them to anyone.</p>
-                        <div class="d-flex align-items-center">
-                            <!-- <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;"> -->
-                            <i class="fas fa-user-alt"></i>
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Chinedu Mba</h6>
-                                <small>Lawyer</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-
-
-        <!-- Team End -->
-        <div class="container-xxl py-5" id="contact">
-            <div class="container px-lg-">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Talk to us</h6>
-                    <h2 class="mt-2">Send us a Message or Review</h2>
-                </div>
-                <div class="row g-4">
-                   
-                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="text-center" >
-                            <img src="img/mail.svg" alt="" width="60%">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="">
-                            <form action="">
-                                <div class="input-group form-group">
-                                <input type="text" name="" id="" placeholder="Full Name" class="form-control">
-                            </div>
-                            <br>
-                            <div class="input-group">
-                                <input type="email" name="" id="" placeholder="Email" class="form-control">
-                            </div>
-                            <br>
-                            <div class="input-group">
-                                <textarea name="" id="" cols="30" rows="4" class="form-control">Message </textarea>
-                                </div>
-                                <div class="input-group">
-                                    <button class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3" >Send Message</button>
-                               
-                                    </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.6s"></div>
-                </div>
-            </div>
-        </div>
-        
-
-        <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
-                        <!-- <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p> -->
-                        <p><i class="fa fa-phone-alt me-3"></i>+234 813 330 5170 </p>
-                        <p><i class="fab fa-whatsapp me-3"></i>+234 904 901 1250 </p>
-                        <p><i class="fa fa-envelope me-3"></i>contact@legacytech.com</p>
-                        <div class="d-flex pt-2">
-                            <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a> -->
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a> -->
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Popular Link</h5>
-                        <a class="btn btn-link" href="#about">About Us</a>
-                        <a class="btn btn-link" href="#contact">Contact Us</a>
-                        <a class="btn btn-link" href="#project">Project</a>
-                        <a class="btn btn-link" href="#service">Service</a>
-                        <a class="btn btn-link" href="quote/">Get a Quatation</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Main Services</h5>
-                        <a class="btn btn-link" href="quote/?s=web">Web Development</a>
-                        <a class="btn btn-link" href="quote/?s=graph">Graphic Design</a>
-                        <a class="btn btn-link" href="quote/?s=smm">SMM</a>
-                        <a class="btn btn-link" href="quote/?s=mark">Digital Marketing</a>
-                        <a class="btn btn-link" href="quote/?s=train">Training</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Get notified when a new service, course or update is available</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy;2023 <a class="border-bottom"  >Legacy Tech</a>				
-							<!-- Designed By <a class="border-bottom"></a> -->
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            All Right Reserved.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
     </div>
+    <div id="about" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+          <div class="w3-container">
+            <span onclick="document.getElementById('about').style.display='none'"class=" w3-button w3-display-topright">&times;</span>   
+            <div class="row">
+                <div class="col l6">
+                            <br><br><br>
+                    <img src="1.svg" style="width:80%;margin-left: 10%;">
+                </div>
+                <div class="col l6">
+                    <h4 class="bold-text" style="font-family: bodyfont">
+                        About Victor
+                    </h4>
+                    <hr>
+                    <p style="font-family: candara;">
+                        Hi there, I'm OKOROAFOR VICTOR.<br>
+                      I am intrigued by user interfaces, graphic designs and programming and all platforms where these are applied, which include website ,mobile applications, flyer designs and many more.
+I enjoy challenges and I'm always open to opportunities to expand and develop my skill set.
+I am always ready to work effectively in a team or alone, freelance or full time.                                                     
+                                                    
+                    </p>
+                    <h4 class="bold-text" style="font-family: bodyfont">
+                       My Objectives
+                    </h4>
+                    <hr>
+                    <p style="font-family: candara;">
+                       I am seeking a position within a tech organization or a design firm as web developer, UI/UX design or graphic designer.
+My objective is to create better interfaces, experiences and development technology which would be easier and better for the user and in turn benefit the organization. 
+                    </p>
+                </div>
+            </div>
+          </div>
+      
+    </div>
+  </div>    
+  <!-- Certificate Modal-->
+  <div id="cert" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4"> 
+        <br>
+        <h5 class="white-text w3-container" style="font-family: bodyfont">
+            CERTIFICATES
+        </h5>
+        <hr>
+        <div class="w3-container">
 
-    <script src="https://kit.fontawesome.com/1e78e0a43f.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="js/main.js"></script>
+            <span onclick="document.getElementById('cert').style.display='none'"
+             class="w3-button w3-display-topright">&times;</span>
+            <div class="owl-carousel owl-theme">
+                
+              <div class="item"> <img src="cert/html_cert.jpg" width="150rem"> </div>
+              <div class="item"> <img src="cert/php_cert.jpg" width="150rem"> </div>
+              <div class="item"> <img src="cert/html_cert.jpg" width="150rem"> </div>
+              <div class="item"> <img src="cert/php_cert.jpg" width="150rem"> </div>
+            </div>
+        </div>
+        <br><br>
+      </div>
+  </div> 
+  <div id="jobs" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4"> 
+        <br>
+        <h5 class="white-text w3-container" style="font-family: bodyfont">
+                    MY JOBS & PROJECTS
+                </h5>
+                <hr>
+        <div class="w3-container">
+
+            <span onclick="document.getElementById('jobs').style.display='none'"
+             class="w3-button w3-display-topright">&times;</span>
+            <div class="owl-carousel">
+    <!--                 
+    <div class="1"> 
+    <img src="img/jobs/1.jpg" width="150rem"> 
+    <br>
+    <div class="buton center">
+    <a class="btn white leg-text" target="_blank">
+    Visit Site
+    </a>
+    </div>
+    </div> -->
+                <div class="2"> 
+                <img src="img/jobs/8.jpg" width="150rem">
+                <br> 
+                <div>
+                     <div class="buton center">
+                    <a href="https://supremekidscontest.com/" class="btn white leg-text" target="_blank">
+                        Visit Site
+                    </a>
+                    </div>
+                </div>
+              </div>
+                <div class="3"> 
+                <img src="img/jobs/3.jpg" width="150rem"> 
+                <br>
+                <div class="buton center">
+                    <a href="https://starrsdelight.store/" class="btn white leg-text" target="_blank">
+                        Visit Site
+                    </a>
+                </div>
+              </div>
+              <div class="4"> 
+                <img src="img/jobs/4.jpg" width="150rem"> 
+                <br>
+                <div class="buton center">
+                    <a href="https://hylook.com.ng/" class="btn white leg-text" target="_blank">
+                        Visit Site
+                    </a>
+                </div>
+              </div>
+              <div class="5"> 
+                <img src="img/jobs/5.jpg" width="150rem"> 
+                <br>
+                 <div class="buton center">
+                    <a href="https://educationplanng.com/" class="btn white leg-text" target="_blank">
+                        Visit Site
+                    </a>
+                </div>
+              </div>
+              <div class="7"> 
+                <img src="img/jobs/7.jpg" width="150rem"> 
+                <br>
+                 <div class="buton center">
+                    <a href="https://thefixerhub.com/" class="btn white leg-text" target="_blank" >
+                        Visit Site
+                    </a>
+                </div>
+              </div>
+              <div class="9"> 
+                <img src="img/jobs/9.jpg" width="150rem"> 
+                <br>
+                 <div class="buton center">
+                    <a href="https://riwofoodmart.com/Riwofoodmart/" class="btn white leg-text" target="_blank">
+                        Visit Site
+                    </a>
+                </div>
+              </div>
+             
+            </div>
+        </div>
+      </div>
+  </div>  
+  <!-- MOdal for Contact -->
+   <div id="contact" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4"> 
+        <br>
+        <h5 class="white-text w3-container" style="font-family: bodyfont">
+                    CONTACT & LINKS 
+
+
+                </h5>
+                <hr>
+        <div class="w3-container">
+            <span onclick="document.getElementById('contact').style.display='none'"
+             class="w3-button w3-display-topright">&times;</span>
+            <div class="row">
+                <div class="col l3 center">
+                      <a href="https://github.com/victorlegacy/"><i class="fab fa-4x center fa-github"></i></a>
+                      <br><br>
+                      <div style="border-radius: 5px" class="white center leg-text">
+                        @victorlegacy
+                      </div>
+                </div>
+                <div class="col l3 center">
+                    <a href="https://www.linkedin.com/in/victor-okoroafor-333370213/"><i class="fab fa-4x center fa-linkedin"></i></a>
+                    <br><br>
+                      <div style="border-radius: 5px" class="white center leg-text">
+                        @Victor OKoroafor
+                      </div>
+                </div>
+                <div class="col l3 center">
+                    <a href="https://twitter.com/0koroaforVictor"><i class="fab fa-4x center fa-twitter"></i></a>
+                    <br><br>
+                      <div style="border-radius: 5px" class="white center leg-text">
+                        @Victor<sup>o</sup>legacy
+                      </div>
+                </div>
+                <div   class="col l3 center">
+                    <a href="https://www.instagram.com/legacytech_/"><i class="fab fa-4x center fa-instagram"></i></a>
+                    <br><br>
+                      <div style="border-radius: 5px" class="white center leg-text">
+                        @legacytech_
+                      </div>
+                </div>
+            </div>
+            <hr>
+            <span style="margin-right: 20px"><i class="fas fa-phone"></i> +234 904 901 1250 , +234 813 330 5170</span> |
+            <span style="margin-left: 20px"><i class="fas fa-envelope"></i> tech.legacy.dev@gmail.com </span>
+        </div>
+        <br>
+      </div>
+  </div> 
+</div>
+<div class="hide-on-large-only" style="margin:0px;padding:0px">
+    <div id="contacte" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4"> 
+        <br>
+        <h5 class="white-text w3-container" style="font-family: bodyfont">
+                    CONTACT & LINKS 
+
+
+                </h5>
+                <hr>
+        <div class="w3-container">
+            <span onclick="document.getElementById('contacte').style.display='none'"
+             class="w3-button w3-display-topright">&times;</span>
+            <div class="row">
+                <div class="col s3 center">
+                      <a href="https://github.com/victorlegacy/"><i class="fab fa-4x center fa-github"></i></a>
+                      <br><br>
+                      <div style="border-radius: 5px;font-size:10px" class="white center leg-text">
+                        @victorlegacy
+                      </div>
+                </div>
+                <div class="col s3 center">
+                    <a href="https://www.linkedin.com/in/victor-okoroafor-333370213/"><i class="fab fa-4x center fa-linkedin"></i></a>
+                    <br><br>
+                      <div style="border-radius: 5px;font-size: 10px" class="white center leg-text">
+                        @Victor OKoroafor
+                      </div>
+                </div>
+                <div class="col s3 center">
+                    <a href="https://twitter.com/0koroaforVictor"><i class="fab fa-4x center fa-twitter"></i></a>
+                    <br><br>
+                      <div style="border-radius: 5px;font-size: 10px" class="white center leg-text">
+                        @Victor<sup>o</sup>legacy
+                      </div>
+                </div>
+                <div   class="col s3 center">
+                    <a href="https://www.instagram.com/legacytech_/"><i class="fab fa-4x center fa-instagram"></i></a>
+                    <br><br>
+                      <div style="border-radius: 5px;font-size: 10px" class="white center leg-text">
+                        @legacytech_
+                      </div>
+                </div>
+            </div>
+            <hr>
+            <span style="font-family:'Segoe UI' ;"><i class="fas fa-phone"></i> +234 904 901 1250 , +234 813 330 5170</span> <br> 
+            <span style="font-family:'Segoe UI' ;"><i class="fas fa-envelope"></i> tech.legacy.dev@gmail.com </span>
+        </div>
+        <br>
+      </div>
+  </div> 
+
+    <div class="intro">
+        <img src="img/commandee.jpg" alt="" width="100%" height="100%" style="position: fixed;filter:blur(10px);z-index: -2;">
+        <div class="contaier center" style="height:100%">
+                <div class="logo">
+                    <br> 
+                    <img src="img/l-tech logo.png" width="10%" style="display: inline;filter: legr(2);" alt=""> 
+                </div>
+                <br><br><br><br><br><br>
+                <div class="">
+                    <h4 class="white-text" style="margin-bottom: -30px;">
+                        Hi there 🖐, I'm 
+                    </h4>
+                    <br>
+                    <h1 class="white-text" style="font-family: bodyfont">           
+                    Victor <span style="color:#0f3157"> Legacy</span>
+                    </h1>
+                    <div style="font-family:bodyfont;color: white;z-index: 77;height: 20px;">
+                        <div id="app" >
+                            <h4 id="it" style="font-family: 'Segoe UI'"></h4>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br><br>
+                <div class="buttons" style="display: inline-block;">
+                    <a href="Victor_Okoroafor_CV.pdf" download class=" btn butn buttonss down leg">
+                        <span class="ikon material-symbols-outlined">cloud_download</span>
+                        Download CV
+                    </a>
+                    <a href="https://wa.me/+2349049011250" class="btn buttonss butn hire leg-text white " style="margin-left:5px">
+                        <span class="ikon material-symbols-outlined">handshake</span>
+                       Hire Me
+                    </a>
+                </div>
+            </div> 
+    </div>
+    
+
+  <ul id="slide-out" class="sidenav">
+     <li class="linx"> 
+                    <a href="#about" onclick="document.getElementById('about').style.display='block'"> 
+                        <span class="ikons material-symbols-outlined"> person</span>
+                        ABOUT 
+                    </a> 
+                </li>
+                <li class="linx"> 
+                    <a href="#cert" onclick="document.getElementById('cert').style.display='block'">
+                        <span class="ikons material-symbols-outlined">card_membership</span>    
+                        CERTS 
+                    </a> 
+                </li>
+                <li class="linx"> 
+                    <a href="#jobs" onclick="document.getElementById('jobs').style.display='block'">
+                        <span class="ikons material-symbols-outlined">work</span>
+                        PROJECTS
+                    </a> 
+                </li> 
+                <li class="linx">   
+                    <a href="#contact" onclick="document.getElementById('contacte').style.display='block'"> 
+                        <span class="ikons material-symbols-outlined">perm_contact_calendar</span>
+                        CONTACT
+                    </a>
+                </li>
+  </ul>
+  <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+    <br>    <br>    
+    <div class="center">    
+        <a href="#" data-target="slide-out" class="sidenav-trigger btn-floating white ">
+            <i class="fas fa-bars fa-2x leg-text" style="color:#0f3157" > </i>
+        </a>
+    </div>  
+</div>
+<!-- Script for hiding pre-loader -->
+<script>
+    function hide(){
+        document.getElementById('load').style.display='none';
+    }
+    setTimeout(hide,4000)
+</script>
+<script src="https://unpkg.com/ityped@1.0.2"></script>
+  <script>
+    ityped.init(document.querySelector("#ityped"), {
+      showCursor: false,
+      loop: true,
+      strings: ['UI/UX Designer','Web Developer ', 'Graphic Designer','App Developer '],
+    })
+
+    ityped.init("#placeholder", {
+      placeholder: false,
+      showCursor: falses
+    })
+  </script>
+    <script src="jquery.js"></script>
+    <script src="owlcarousel/owl.carousel.js"></script>
+    <script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+    <script src="https://kit.fontawesome.com/1f573f0a48.js" crossorigin="anonymous"></script> 
+    <script src="js/jquery.js"></script>
+ <script src="js/materialize.js"></script>
+ <script>
+     $(document).ready(function(){
+    $('.sidenav').sidenav();
+      });
+ </script> 
 </body>
-
 </html>
