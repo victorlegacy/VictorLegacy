@@ -48,8 +48,8 @@
             }
         .w3-modal-content{
             width: 70%;
-            background: #0f3157;
-            color:white;
+            color: #0f3157;
+            background:white;
             border-radius: 10px;
         }
     .linx:hover{
@@ -128,6 +128,9 @@
         background-repeat: none;
         filter: legr(2px);
     }*/
+    .bg-dark{
+        background: #0f3157;
+    }
         .leg{ 
             background: #0f3157;
         }
@@ -163,87 +166,7 @@
     </style>
 </head>
 <body>
-    <div class="hide-on-med-and-down">
-        <div id="load" style="width: 100%;height:100%;background:linear-gradient(to left, #0f3157,#16212c,#0f3157);z-index: 99;position: fixed;">
-            <div style="position: absolute;width:5%;height:20%;margin-left:45%;margin-top: 20%;">
-            <div class="loader">
-                <div class="loader-square"></div>
-                <div class="loader-square"></div>
-                <div class="loader-square"></div>
-                <div class="loader-square"></div>
-                <div class="loader-square"></div>
-                <div class="loader-square"></div>
-                <div class="loader-square"></div>
-                </div>
-            </div>
-        </div>
-    <img src="img/commandee.jpg" alt="" width="70%" style="position: fixed;filter:blur(10px);z-index: -2;">
-    <div class="row" style="z-index: 77;">
-        <div class="col l6 m6 s12 push-l1 bg">
-            <div class="contaier" style="height:100%">
-                <div class="logo">
-                    <br> 
-                    <img src="img/l-tech logo.png" width="10%" style="display: inline;filter: legr(2);" alt=""> 
-                </div>
-                <br><br><br><br><br><br>
-                <div class="">
-                    <h4 class="white-text" style="margin-bottom: -30px;">
-                        Hi there 🖐, I'm 
-                    </h4>
-                    <br>
-                    <h1 class="white-text" style="font-family: bodyfont">           
-                    Victor <span style="color:#0f3157"> Legacy</span>
-                    </h1>
-                    <div style="font-family:bodyfont;color: white;z-index: 77;height: 20px;">
-                        <div id="app" >
-                            <h4 id="ityped" style="font-family: 'Segoe UI'"></h4>
-                        </div>
-                    </div>
-                </div>
-                <br><br><br><br><br><br>
-                <div class="buttons" style="display: inline-block;">
-                    <a href="Victor_Okoroafor_CV.pdf" download class=" btn-large butn button down leg">
-                        <span class="ikon material-symbols-outlined">cloud_download</span>
-                        Download CV
-                    </a>
-                    <a href="https://wa.me/+2349049011250" target="_blank" class="btn-large button butn hire leg-text white " style="margin-left:5px">
-                        <span class="ikon material-symbols-outlined">handshake</span> 
-                       Hire Me
-                    </a>
-                </div>
-            </div>                    
-        </div>
-        <div class="col l6 m6 s12 pull-l1 right-align" style="height: 100%;"> 
-            <div style="margin-top: 30%;">
-              <ul>
-                <li class="linx"> 
-                    <a href="#about" onclick="document.getElementById('about').style.display='block'"> 
-                        <span class="ikons material-symbols-outlined"> person</span>
-                        ABOUT 
-                    </a> 
-                </li>
-                <li class="linx"> 
-                    <a href="#cert" onclick="document.getElementById('cert').style.display='block'">
-                        <span class="ikons material-symbols-outlined">card_membership</span>    
-                        CERTS 
-                    </a> 
-                </li>
-                <li class="linx"> 
-                    <a href="#jobs" onclick="document.getElementById('jobs').style.display='block'">
-                        <span class="ikons material-symbols-outlined">work</span>
-                        PROJECTS
-                    </a> 
-                </li> 
-                <li class="linx">   
-                    <a href="#contact" onclick="document.getElementById('contact').style.display='block'"> 
-                        <span class="ikons material-symbols-outlined">perm_contact_calendar</span>
-                        CONTACT
-                    </a>
-                </li>
-              </ul>
-            </div>
-        </div>
-    </div>
+    <!-- MODALS -->
     <div id="about" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom w3-card-4">
           <div class="w3-container">
@@ -251,7 +174,7 @@
             <div class="row">
                 <div class="col l6">
                             <br><br><br>
-                    <img src="1.svg" style="width:80%;margin-left: 10%;">
+                    <img src="img/undraw_dev-productivity_5wps.svg" style="width:80%;margin-left: 10%;">
                 </div>
                 <div class="col l6">
                     <h4 class="bold-text" style="font-family: bodyfont">
@@ -259,20 +182,33 @@
                     </h4>
                     <hr>
                     <p style="font-family: candara;">
-                        Hi there, I'm OKOROAFOR VICTOR.<br>
-                      I am intrigued by user interfaces, graphic designs and programming and all platforms where these are applied, which include website ,mobile applications, flyer designs and many more.
-I enjoy challenges and I'm always open to opportunities to expand and develop my skill set.
-I am always ready to work effectively in a team or alone, freelance or full time.                                                     
+                        Hi, I'm Okoroafor Victor 👋<br>
+                        
+                        I'm a passionate developer and digital creative who thrives at the intersection of design, development, and innovation. I specialize in crafting sleek, user-focused interfaces across web and mobile platforms.
+                        <br> <br>
+                        I love turning ideas into reality — from custom tools and platforms to full-stack apps, POS systems, and digital products. I'm always exploring new challenges, building solutions, and improving my craft.
+                        <br> <br>
+                        Whether it's freelance gigs, solo projects, or team collaborations, I'm all about creating things that make an impact.
+                        
+                                                                     
                                                     
                     </p>
-                    <h4 class="bold-text" style="font-family: bodyfont">
+                    <hr>
+                    <div class=" " style="display: inline-block;">
+                        <a href="Victor_Okoroafor_CV.pdf" download class="btn-large button bg-dark">
+                            <span class="ikon material-symbols-outlined">cloud_download</span>
+                            Get CV
+                        </a>
+                        </div>
+
+                    <!-- <h4 class="bold-text" style="font-family: bodyfont">
                        My Objectives
                     </h4>
                     <hr>
                     <p style="font-family: candara;">
                        I am seeking a position within a tech organization or a design firm as web developer, UI/UX design or graphic designer.
 My objective is to create better interfaces, experiences and development technology which would be easier and better for the user and in turn benefit the organization. 
-                    </p>
+                    </p> -->
                 </div>
             </div>
           </div>
@@ -424,7 +360,7 @@ My objective is to create better interfaces, experiences and development technol
                     <a href="https://www.instagram.com/legacytech_/"><i class="fab fa-4x center fa-instagram"></i></a>
                     <br><br>
                       <div style="border-radius: 5px" class="white center leg-text">
-                        @legacytech_
+                        <a href="https://www.instagram.com/legacytech_/"> @legacytech_ </a>
                       </div>
                 </div>
             </div>
@@ -435,6 +371,89 @@ My objective is to create better interfaces, experiences and development technol
         <br>
       </div>
   </div> 
+    <!-- END OF MODALS -->
+    <div class="hide-on-med-and-down">
+        <div id="load" style="width: 100%;height:100%;background:linear-gradient(to left, #0f3157,#16212c,#0f3157);z-index: 99;position: fixed;">
+            <div style="position: absolute;width:5%;height:20%;margin-left:45%;margin-top: 20%;">
+            <div class="loader">
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                </div>
+            </div>
+        </div>
+    <img src="img/commandee.jpg" alt="" width="70%" style="position: fixed;filter:blur(10px);z-index: -2;">
+    <div class="row" style="z-index: 77;">
+        <div class="col l6 m6 s12 push-l1 bg">
+            <div class="contaier" style="height:100%">
+                <div class="logo">
+                    <br> 
+                    <img src="img/l-tech logo.png" width="10%" style="display: inline;filter: legr(2);" alt=""> 
+                </div>
+                <br><br><br><br><br><br>
+                <div class="">
+                    <h4 class="white-text" style="margin-bottom: -30px;">
+                        Hi there 🖐, I'm 
+                    </h4>
+                    <br>
+                    <h1 class="white-text" style="font-family: bodyfont">           
+                    Victor <span style="color:#0f3157"> Legacy</span>
+                    </h1>
+                    <div style="font-family:bodyfont;color: white;z-index: 77;height: 20px;">
+                        <div id="app" >
+                            <h4 id="ityped" style="font-family: 'Segoe UI'"></h4>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br><br>
+                <div class="buttons" style="display: inline-block;">
+                    <a href="victor-okoroafor-cv.pdf" download class=" btn-large butn button down leg">
+                        <span class="ikon material-symbols-outlined">cloud_download</span>
+                        Download CV
+                    </a>
+                    <a href="https://wa.me/+2349049011250" target="_blank" class="btn-large button butn hire leg-text white " style="margin-left:5px">
+                        <span class="ikon material-symbols-outlined">handshake</span> 
+                       Hire Me
+                    </a>
+                </div>
+            </div>                    
+        </div>
+        <div class="col l6 m6 s12 pull-l1 right-align" style="height: 100%;"> 
+            <div style="margin-top: 30%;">
+              <ul>
+                <li class="linx"> 
+                    <a href="#about" onclick="document.getElementById('about').style.display='block'"> 
+                        <span class="ikons material-symbols-outlined"> person</span>
+                        ABOUT 
+                    </a> 
+                </li>
+                <li class="linx"> 
+                    <a href="#cert" onclick="document.getElementById('cert').style.display='block'">
+                        <span class="ikons material-symbols-outlined">card_membership</span>    
+                        CERTS 
+                    </a> 
+                </li>
+                <li class="linx"> 
+                    <a href="#jobs" onclick="document.getElementById('jobs').style.display='block'">
+                        <span class="ikons material-symbols-outlined">work</span>
+                        PROJECTS
+                    </a> 
+                </li> 
+                <li class="linx">   
+                    <a href="#contact" onclick="document.getElementById('contact').style.display='block'"> 
+                        <span class="ikons material-symbols-outlined">perm_contact_calendar</span>
+                        CONTACT
+                    </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    
 </div>
 <div class="hide-on-large-only" style="margin:0px;padding:0px">
     <div id="contacte" class="w3-modal">
@@ -511,7 +530,7 @@ My objective is to create better interfaces, experiences and development technol
                 </div>
                 <br><br><br><br><br><br>
                 <div class="buttons" style="display: inline-block;">
-                    <a href="Victor_Okoroafor_CV.pdf" download class=" btn butn buttonss down leg">
+                    <a href="victor-okoroafor-cv.pdf" download class=" btn butn buttonss down leg">
                         <span class="ikon material-symbols-outlined">cloud_download</span>
                         Download CV
                     </a>
